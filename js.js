@@ -46,6 +46,15 @@ document.querySelector('.theme').addEventListener('click', function () {
 });
 toggleDarkMode();
 
+/*mobile*/
+const button = document.querySelector(".theme");
+
+if (window.innerWidth <= 768) {
+    button.addEventListener("click", function() {
+        button.blur();
+    });
+}
+
 
 
 
