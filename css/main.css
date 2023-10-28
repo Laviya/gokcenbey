@@ -68,7 +68,18 @@ a{
     background-color: var(--hover-background)!important;
     transition: ease-in-out 300ms;
 }
-
+button{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+button:focus{
+    outline: none !important;
+}
 .photograph-theme img{
     max-width: 240px;
     max-height: 240px;
