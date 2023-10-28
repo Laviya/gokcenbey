@@ -243,12 +243,6 @@ button:focus{
     line-height: normal;
 }
 
-@media (hover: none) {
-    .theme:hover {
-        background-color: initial; 
-    }
-}
-
 
   
   
