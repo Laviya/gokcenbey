@@ -68,6 +68,7 @@ a{
     background-color: var(--hover-background)!important;
     transition: ease-in-out 300ms;
 }
+
 button{
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -240,6 +241,12 @@ button:focus{
     color: var(--third-color);
     font-size: 14px;
     line-height: normal;
+}
+
+@media (hover: none) {
+    .theme:hover {
+        background-color: initial; 
+    }
 }
 
 
