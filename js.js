@@ -3,18 +3,18 @@
 ScrollReveal({ 
     reset: true,
     distance: "20px",
-    duration: 1000,
-    delay: 200
+    duration: 800,
+    delay: 100
 });
 
 ScrollReveal().reveal('.contentsText', { delay: 200 });
-ScrollReveal().reveal('.experience-h2', { delay: 300 });
-ScrollReveal().reveal('.first', { delay: 100, origin: "left"});
+ScrollReveal().reveal('.experience', { delay: 300, origin: "left" });
+ScrollReveal().reveal('.information-detail', { delay: 300, origin: "bottom"});
+/*ScrollReveal().reveal('.first', { delay: 100, origin: "left"});
 ScrollReveal().reveal('.second', { delay: 150, origin: "left"});
 ScrollReveal().reveal('.third', { delay: 200, origin: "left"});
-ScrollReveal().reveal('.information-mail', { delay: 200, origin: "bottom"});
 ScrollReveal().reveal('.information-link', { delay: 250, origin: "bottom"});
-ScrollReveal().reveal('.information-github', { delay: 300, origin: "bottom"});
+ScrollReveal().reveal('.information-github', { delay: 300, origin: "bottom"});*/
 
 /*Theme*/
 
@@ -45,17 +45,6 @@ document.querySelector('.theme').addEventListener('click', function () {
     toggleDarkMode();
 });
 toggleDarkMode();
-
-/*mobile*/
-const button = document.querySelector(".theme");
-
-if (window.innerWidth <= 768) {
-    button.addEventListener("mouseover", function() {
-        button.blur();
-    });
-}
-
-
 
 
 
